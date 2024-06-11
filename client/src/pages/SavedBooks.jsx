@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useQuery } from '@apollo/client';
-import { GET_ME, Get_ME } from '../utils/queries';
+import { GET_ME} from '../utils/queries';
 
 import {
   Container,
@@ -21,7 +21,7 @@ const SavedBooks = () => {
   const userDataLength = Object.keys(userData).length;
 
     const UserData = async () => {
-      const { data } = useQuery(userData ? Get_ME : [],
+      const { data } = useQuery(userData ? GET_ME : [],
 
       )
       try {

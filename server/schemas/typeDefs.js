@@ -22,7 +22,7 @@ type Auth {
 }
 
 input Info {
-    bookId: Strings
+    bookId: String
     authors: [String]
     description: String
     title: String
